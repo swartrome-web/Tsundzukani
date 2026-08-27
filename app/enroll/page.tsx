@@ -23,7 +23,7 @@ export default function EnrollPage() {
       <nav className="bg-white border-b-4 border-[#2A7FFF] sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
           <Link href="/" className="font-extrabold text-[#1A4AB9] text-xl md:flex items-center">⭐🖍️TSUNDZUKANI ECD</Link>
-          <span className="bg-blue-50 border px-3 py-1 rounded-full text-xs font-bold">🇿🇦 Moretele • North-West</span>
+          <span className="bg-blue-50 border px-3 py-1 rounded-full text-slate-900 font-bold">🇿🇦 Moretele • North-West</span>
         </div>
       </nav>
 
@@ -42,13 +42,13 @@ export default function EnrollPage() {
             </div>
             <div>
               <label className="text-slate-900 font-bold">Date of Birth</label>
-              <input name="dob" type="date" required className="w-full mt-1 border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-slate-900 outline-none focus:ring-2 focus:ring-[#2A7FFF]" />
+              <input name="dob" type="date" required className="w-full mt-1 bg-whie border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-slate-900 outline-none focus:ring-2 focus:ring-[#2A7FFF]" />
             </div>
           </div>
 
           <div>
             <label className="bg-white text-slate-900 font-bold">Parent/Guardian Name</label>
-            <input name="parent" required placeholder="e.g. Lerato Moloto" className="w-full mt-1 bg-white border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-sm" />
+            <input name="parent" required placeholder="e.g. Lerato Moloto" className="w-full mt-1 bg-white border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-slate-900 outline-none focus:ring-2 focus:ring-[#2A7FFF]" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">
@@ -56,14 +56,14 @@ export default function EnrollPage() {
               <label className="bg-white text-slate-900 font-bold">Phone</label>
               <div className="flex gap-2 mt-1">
                 <span className="border rounded-lg px-2 py-2.5 text-sm bg-slate-50">🇿🇦</span>
-                <input name="phone" required placeholder="+27 82 345 6789" className="w-full border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-slate-900 bg-white" />
+                <input name="phone" required placeholder="+27 82 345 6789" className="w-full border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-slate-900 bg-white outline-none focus:ring-2 focus:ring-[#2A7FFF]" />
               </div>
             </div>
             <div>
               <label className="bg-white text-slate-900 font-bold">WhatsApp</label>
               <div className="flex gap-2 mt-1">
                 <span className="border rounded-lg px-2 py-2.5 text-sm bg-green-50">💬</span>
-                <input name="whatsapp" required placeholder="+27 82 345 6789" className="w-full border border-[#2A7FFF]  rounded-lg px-3 py-2.5 bg-white text-slate-900" />
+                <input name="whatsapp" required placeholder="+27 82 345 6789" className="w-full border border-[#2A7FFF]  rounded-lg px-3 py-2.5 bg-white text-slate-900 outline-none focus:ring-2 focus:ring-[#2A7FFF]" />
               </div>
             </div>
           </div>
