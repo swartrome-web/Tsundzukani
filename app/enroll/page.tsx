@@ -48,7 +48,7 @@ export default function EnrollPage() {
 
           <div>
             <label className="text-sm font-bold">Parent/Guardian Name</label>
-            <input name="parent" required placeholder="e.g. Lerato Moloto" className="w-full mt-1 border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-sm" />
+            <input name="parent" required placeholder="e.g. Lerato Moloto" className="w-full mt-1 bg-white border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-sm" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">
