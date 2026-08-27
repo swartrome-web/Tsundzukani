@@ -53,17 +53,17 @@ export default function EnrollPage() {
 
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <label className="v font-bold">Phone</label>
+              <label className="bg-white text-slate-900 font-bold">Phone</label>
               <div className="flex gap-2 mt-1">
                 <span className="border rounded-lg px-2 py-2.5 text-sm bg-slate-50">🇿🇦</span>
-                <input name="phone" required placeholder="+27 82 345 6789" className="w-full border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-slate-" />
+                <input name="phone" required placeholder="+27 82 345 6789" className="w-full border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-slate-900 bg-white" />
               </div>
             </div>
             <div>
-              <label className=" font-bold">WhatsApp</label>
+              <label className="bg-white text-slate-900 font-bold">WhatsApp</label>
               <div className="flex gap-2 mt-1">
                 <span className="border rounded-lg px-2 py-2.5 text-sm bg-green-50">💬</span>
-                <input name="whatsapp" required placeholder="+27 82 345 6789" className="w-full border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-sm" />
+                <input name="whatsapp" required placeholder="+27 82 345 6789" className="w-full border border-[#2A7FFF]  rounded-lg px-3 py-2.5 bg-white text-slate-900" />
               </div>
             </div>
           </div>
@@ -90,11 +90,11 @@ export default function EnrollPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="text-slate-900 font-bold">Start Date</label>
-              <input name="startDate" type="date" className="w-full mt-1 border rounded-lg px-3 py-2.5 text-sm" />
+              <input name="startDate" type="date" className="w-full mt-1 border rounded-lg px-3 py-2.5 bg-white text-slate-900" />
             </div>
             <div>
               <label className="text-slate-900 font-bold">Message</label>
-              <input name="message" placeholder="Any allergies, medical needs..." className="w-full mt-1 border rounded-lg px-3 py-2.5 text-sm" />
+              <input name="message" placeholder="Any allergies, medical needs..." className="w-full mt-1 border rounded-lg px-3 py-2.5 bg-white text-slate-900" />
             </div>
           </div>
 
@@ -107,10 +107,10 @@ export default function EnrollPage() {
         {/* SUMMARY */}
         <div className="space-y-6">
           <div className="bg-white rounded-2xl shadow-sm border p-6">
-            <h3 className="font-extrabold text-lg flex gap-2">🧮 Fee Summary</h3>
+            <h3 className="font-extrabold text-slate-900 flex gap-2" >🧮 Fee Summary</h3>
             <div className="mt-4 space-y-3">
               <div className="bg-[#E6F0FF] rounded-xl p-4 flex justify-between">
-                <div><p className="font-bold text-sm">Registration Fee</p><p className="text-xs text-slate-500">Once-off, paid on enrollment</p></div>
+                <div><p className="font-bold text-slate-900">Registration Fee</p><p className="text-xs text-slate-500">Once-off, paid on enrollment</p></div>
                 <p className="font-extrabold text-[#1A4AB9]">R500</p>
               </div>
               <div className="bg-[#E6F0FF] rounded-xl p-4 flex justify-between">
@@ -119,11 +119,11 @@ export default function EnrollPage() {
               </div>
             </div>
 
-            <h4 className="font-bold mt-6 mb-2">Payment Options</h4>
+            <h4 className="font-bold mt-6 mb-2 text-slate-900">Payment Options</h4>
             <div className="grid grid-cols-3 gap-2 text-[11px] font-semibold">
-              <span className="border rounded-lg py-2 text-center">💳 Card / EFT</span>
-              <span className="border rounded-lg py-2 text-center">📱 SnapScan</span>
-              <span className="border rounded-lg py-2 text-center">💵 Cash at Office</span>
+              <span className="border rounded-lg py-2 text-center text-slate-900">💳 Card / EFT</span>
+              <span className="border rounded-lg py-2 text-center text-slate-900">📱 SnapScan</span>
+              <span className="border rounded-lg py-2 text-center text-slate-900">💵 Cash at Office</span>
             </div>
 
             <div className="bg-blue-50 border border-blue-200 rounded-xl p-3 mt-4 flex justify-between font-bold text-[#1A4AB9]">
@@ -131,22 +131,22 @@ export default function EnrollPage() {
             </div>
 
             <div className="mt-6">
-              <p className="font-bold text-sm">Trusted & Certified</p>
+              <p className="font-bold text-slate-900">Trusted & Certified</p>
               <div className="flex gap-3 mt-2 text-[10px]">
-                <span className="bg-green-50 px-2 py-1 rounded">🛡️ POPIA Compliant</span>
-                <span className="bg-blue-50 px-2 py-1 rounded">⭐ Registered ECD 2023/0015 Limpopo</span>
-                <span className="bg-orange-50 px-2 py-1 rounded">⛑️ First Aid Certified Staff</span>
+                <span className="bg-green-50 px-2 py-1 rounded text-slate-900">🛡️ POPIA Compliant</span>
+                <span className="bg-blue-50 px-2 py-1 rounded text-slate-900">⭐ Registered ECD 2023/0015 Limpopo</span>
+                <span className="bg-orange-50 px-2 py-1 rounded text-slate-900">⛑️ First Aid Certified Staff</span>
               </div>
             </div>
 
             <div className="mt-6 text-xs text-slate-600 space-y-1">
               <p>Need help? Contact us</p>
-              <p>📞 015 123 4567 &nbsp; ✉️ info@katsocreche.co.za</p>
+              <p>📞 061 508 4507 &nbsp; ✉️ tsundzukaniecd@gmail.com</p>
             </div>
           </div>
 
           <div className="bg-[#1A4AB9] text-white rounded-2xl p-4 text-xs text-center">
-            © 2024 Katso Crèche — Mankweng, Limpopo | Reg. No: 2023/0015 | Open Mon-Fri 07:00-17:30
+            © 2026 Tsundzukani ECD — Moretele, North-West | Reg. No: 2023/0015 | Open Mon-Fri 07:00-17:30
           </div>
         </div>
       </div>
