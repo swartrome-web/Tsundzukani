@@ -90,7 +90,6 @@ export default function Home() {
 
       <div className="mt-8 flex gap-3">
         <Link href="/enroll" className="bg-[#2A7FFF] text-white px-6 py-3 rounded-xl font-bold">Enroll Now</Link>
-        <Link href="#programs" className="border-2 border-[#1A4AB9] text-[#1A4AB9] px-6 py-3 rounded-xl font-bold">Our Perks</Link>
       </div>
     </div>
 
@@ -118,14 +117,14 @@ export default function Home() {
           <div>
             <h4 className="font-extrabold text-[#1A4AB9] text-xl mb-3">⭐ Contact Us</h4>
             <p className="text-sm text-slate-700">📍 785 Matjila street, Moretele, Ngobi Main Road • North-West, South Africa</p>
-            <p className="text-sm text-slate-700">📞 015 291 4567 • tsundzukaniecd@gmail.com</p>
+            <p className="text-sm text-slate-700">📞 061 508 4507 • tsundzukaniecd@gmail.com</p>
             <p className="text-sm text-slate-700">🕘 Open: Monday-Friday, 07:00-17:00 • Closed on public holidays</p>
           </div>
         </div>
       </section>
 
       <footer className="bg-[#1A4AB9] text-white text-center py-4 text-xs">
-        © 2024 Tsundzukani ECD — Moretele, North-West • Follow us: Facebook Instagram WhatsApp
+        © 2026 Tsundzukani ECD — Moretele, North-West • Follow us: Facebook Instagram WhatsApp
       </footer>
       <WhatsAppButton/>
     </main>
