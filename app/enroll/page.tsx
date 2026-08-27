@@ -56,7 +56,7 @@ export default function EnrollPage() {
               <label className="v font-bold">Phone</label>
               <div className="flex gap-2 mt-1">
                 <span className="border rounded-lg px-2 py-2.5 text-sm bg-slate-50">🇿🇦</span>
-                <input name="phone" required placeholder="+27 82 345 6789" className="w-full border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-sm" />
+                <input name="phone" required placeholder="+27 82 345 6789" className="w-full border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-slate-" />
               </div>
             </div>
             <div>
