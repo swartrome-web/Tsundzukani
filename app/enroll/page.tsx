@@ -12,7 +12,7 @@ export default function EnrollPage() {
     const data = new FormData(e.target)
     const phone = data.get('whatsapp')
     // Replace with your WhatsApp number
-    const msg = `New Katso Enrolment:%0AChild: ${data.get('childName')}%0ADOB: ${data.get('dob')}%0AParent: ${data.get('parent')}%0AProgram: ${data.get('program')}%0APhone: ${phone}`
+    const msg = `New Tsundzukani Enrolment:%0AChild: ${data.get('childName')}%0ADOB: ${data.get('dob')}%0AParent: ${data.get('parent')}%0AProgram: ${data.get('program')}%0APhone: ${phone}`
     window.open(`https://wa.me/27687439550?text=${msg}`, '_blank')
     setLoading(false)
   }
