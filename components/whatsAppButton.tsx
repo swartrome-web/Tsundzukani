@@ -2,7 +2,7 @@
 import { useState } from "react"
 
 export default function WhatsAppButton() {
-  const phone = "27714794174" // CHANGE TO REAL: 27 + number without 0, e.g., 27821234567
+  const phone = "27687439550" // CHANGE TO REAL: 27 + number without 0, e.g., 27821234567
   const message = "Dumelang! I saw Tsundzukani ECD website - I want to enroll my child. Can you help? ⭐"
 
   return (
