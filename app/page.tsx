@@ -106,6 +106,27 @@ export default function Home() {
   </div>
 </section>
 
+      {/* PROGRAMS */}
+      <section id="programs" className="bg-slate-50 py-16">
+        <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-6">
+          {[
+            { title: 'Early Learning', age: '6-18 Months', color: 'bg-yellow-400', desc: 'Sensory play, gentle care, and early learning activities designed for our youngest. Focus on bonding, movement, and exploration.' },
+            { title: 'Toddler Play & Learn', age: '18mo-3 Years', color: 'bg-green-400', desc: 'Interactive play-based learning to develop language, social skills, and creativity through fun activities and group play.' },
+            { title: 'Pre-School Ready', age: '3-5 Years', color: 'bg-pink-400', desc: 'School-readiness program focused on foundational literacy, numeracy, problem-solving, and confidence for the next step.' },
+          ].map((p, i) => (
+            <div key={i} className="bg-white rounded-2xl shadow-sm border overflow-hidden">
+              <div className={`${p.color} h-2`}></div>
+              <div className="p-6">
+                <h4 className="font-extrabold text-[#1A4AB9]">{p.title}</h4>
+                <p className="text-sm font-bold text-slate-500">{p.age}</p>
+                <p className="text-sm text-slate-600 mt-3">{p.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+
       {/* FEES & CONTACT */}
       <section id="fees" className="bg-[#E6F0FF] py-12">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
