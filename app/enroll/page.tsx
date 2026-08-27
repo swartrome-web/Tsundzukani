@@ -41,26 +41,26 @@ export default function EnrollPage() {
               <input name="childName" required placeholder="e.g. Thabo Moloto" className="w-full mt-1 border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-slate-900 outline-none focus:ring-2 focus:ring-[#2A7FFF]" />
             </div>
             <div>
-              <label className="text-sm font-bold">Date of Birth</label>
-              <input name="dob" type="date" required className="w-full mt-1 border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-[#2A7FFF]" />
+              <label className="text-slate-900 font-bold">Date of Birth</label>
+              <input name="dob" type="date" required className="w-full mt-1 border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-slate-900 outline-none focus:ring-2 focus:ring-[#2A7FFF]" />
             </div>
           </div>
 
           <div>
-            <label className="text-sm font-bold">Parent/Guardian Name</label>
+            <label className="text-slate-900 font-bold">Parent/Guardian Name</label>
             <input name="parent" required placeholder="e.g. Lerato Moloto" className="w-full mt-1 bg-white border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-sm" />
           </div>
 
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <label className="text-sm font-bold">Phone</label>
+              <label className="v font-bold">Phone</label>
               <div className="flex gap-2 mt-1">
                 <span className="border rounded-lg px-2 py-2.5 text-sm bg-slate-50">🇿🇦</span>
                 <input name="phone" required placeholder="+27 82 345 6789" className="w-full border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-sm" />
               </div>
             </div>
             <div>
-              <label className="text-sm font-bold">WhatsApp</label>
+              <label className=" font-bold">WhatsApp</label>
               <div className="flex gap-2 mt-1">
                 <span className="border rounded-lg px-2 py-2.5 text-sm bg-green-50">💬</span>
                 <input name="whatsapp" required placeholder="+27 82 345 6789" className="w-full border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-sm" />
@@ -69,7 +69,7 @@ export default function EnrollPage() {
           </div>
 
           <div>
-            <label className="text-sm font-bold">Program Selection</label>
+            <label className="text-slate-900 font-bold">Program Selection</label>
             <div className="grid md:grid-cols-3 gap-3 mt-2">
               {[
                 { id: 'toddler', name: 'Toddler', age: '18 months - 3 years • 07:30' },
@@ -79,8 +79,8 @@ export default function EnrollPage() {
                 <label key={p.id} className="border rounded-xl p-3 flex gap-2 cursor-pointer hover:border-[#2A7FFF] has-[:checked]:bg-blue-50 has-[:checked]:border-[#2A7FFF]">
                   <input type="radio" name="program" value={p.name} defaultChecked={p.id==='toddler'} className="mt-1" />
                   <div>
-                    <p className="font-bold text-sm">{p.name}</p>
-                    <p className="text-[11px] text-slate-500">{p.age}</p>
+                    <p className="font-bold text-slate-900">{p.name}</p>
+                    <p className="text-[11px] text-slate-900">{p.age}</p>
                   </div>
                 </label>
               ))}
@@ -89,11 +89,11 @@ export default function EnrollPage() {
 
           <div className="grid md:grid-cols-2 gap-4">
             <div>
-              <label className="text-sm font-bold">Start Date</label>
+              <label className="text-slate-900 font-bold">Start Date</label>
               <input name="startDate" type="date" className="w-full mt-1 border rounded-lg px-3 py-2.5 text-sm" />
             </div>
             <div>
-              <label className="text-sm font-bold">Message</label>
+              <label className="text-slate-900 font-bold">Message</label>
               <input name="message" placeholder="Any allergies, medical needs..." className="w-full mt-1 border rounded-lg px-3 py-2.5 text-sm" />
             </div>
           </div>
@@ -115,7 +115,7 @@ export default function EnrollPage() {
               </div>
               <div className="bg-[#E6F0FF] rounded-xl p-4 flex justify-between">
                 <div><p className="font-bold text-sm">Monthly Fee</p><p className="text-xs text-slate-500">Includes meals, activities & learning materials</p></div>
-                <p className="font-extrabold">R1400/month</p>
+                <p className="font-extrabold">R250/month</p>
               </div>
             </div>
 
