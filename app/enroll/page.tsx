@@ -38,7 +38,7 @@ export default function EnrollPage() {
           <div className="grid md:grid-cols-2 gap-4">
             <div>
               <label className="text-slate-900 font-bold">Child&apos;s Name</label>
-              <input name="childName" required placeholder="e.g. Thabo Moloto" className="w-full mt-1 border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-gray outline-none focus:ring-2 focus:ring-[#2A7FFF]" />
+              <input name="childName" required placeholder="e.g. Thabo Moloto" className="w-full mt-1 border border-[#2A7FFF]  rounded-lg px-3 py-2.5 text-slate-900 outline-none focus:ring-2 focus:ring-[#2A7FFF]" />
             </div>
             <div>
               <label className="text-sm font-bold">Date of Birth</label>
