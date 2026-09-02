@@ -1,4 +1,5 @@
 // app/page.tsx - Katso Crèche Mankweng - Blue Fun Theme
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
 import WhatsAppButton from '@/components/whatsAppButton'
