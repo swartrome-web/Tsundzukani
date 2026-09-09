@@ -2,33 +2,51 @@
 'use client'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from "react";
 import WhatsAppButton from '@/components/whatsAppButton'
 import Footer from '@/components/Footer'
 import BackHome from '@/components/BackHome'
 import TsundzukaniGallery from '@/components/TsundzukaniGallery'
 export default function Home() {
+  const [open, setOpen] = useState(false);
   return (
     <main className="min-h-screen bg-white font-sans">
       {/* NAVBAR */}
       <nav className="sticky top-0 z-50 bg-white border-b-4 border-[#2A7FFF]">
-        <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-          <div className="flex items-center ">
-            <div className="text-3xl"><img src="tsundzukani-icon.jpg" className="w-21 h-21 object-contain rounded-full bg-white p-1"/></div>
-             <div >
-              <div><h1 className="font-extrabold text-[#25D366] text-xl leading-none">TSUNDZUKANI</h1></div>
-              <div><p className="font-extrabold text-[#2A7FFF]">ECD & AFTERCARE LEARNING CENTRE</p></div>
-             </div>
-          </div>
-          <div className="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
-            <Link href="#about" className="hover:text-[#2A7FFF]">About Us</Link>
-            <Link href="#programs" className="hover:text-[#2A7FFF]">Our Programs</Link>
-            <Link href="#fees" className="hover:text-[#2A7FFF]">Fees</Link>
-            <Link href="#contact" className="hover:text-[#2A7FFF]">Contact</Link>
-            <Link href="/compliance" className="hover:text-[#2A7FFF]">CSI Compliance</Link>
-            <Link href="/enroll" className="bg-[#2A7FFF] text-white px-5 py-2.5 rounded-lg font-bold shadow-md hover:bg-[#1A4AB9]">Enroll Now</Link>
-          </div>
-        </div>
-      </nav>
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
+    <div className="flex items-center gap-2">
+      <img src="/tsundzukani-icon.jpg" className="w-12 h-12 object-contain rounded-full bg-white p-1" alt="logo"/>
+      <div>
+        <h1 className="font-extrabold text-[#25D366] text-lg sm:text-xl leading-none">TSUNDZUKANI</h1>
+        <p className="font-extrabold text-[#2A7FFF] text-[10px] sm:text-xs leading-tight">ECD & AFTERCARE LEARNING CENTRE</p>
+      </div>
+    </div>
+
+    <div className="hidden md:flex items-center gap-6 text-sm font-semibold text-slate-600">
+      <Link href="#about" className="hover:text-[#2A7FFF]">About Us</Link>
+      <Link href="#programs" className="hover:text-[#2A7FFF]">Our Programs</Link>
+      <Link href="#fees" className="hover:text-[#2A7FFF]">Fees</Link>
+      <Link href="#contact" className="hover:text-[#2A7FFF]">Contact</Link>
+      <Link href="/compliance" className="hover:text-[#2A7FFF]">CSI Compliance</Link>
+      <Link href="/enroll" className="bg-[#2A7FFF] text-white px-5 py-2.5 rounded-lg font-bold shadow-md hover:bg-[#1A4AB9]">Enroll Now</Link>
+    </div>
+
+    <button onClick={() => setOpen(!open)} className="md:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-slate-100 text-2xl">
+      {open? "✕" : "☰"}
+    </button>
+  </div>
+
+  {open && (
+    <div className="md:hidden bg-white border-t shadow-lg flex flex-col px-4 py-4 gap-4 text-sm font-semibold">
+      <Link href="#about" onClick={() => setOpen(false)} className="py-2 border-b">About Us</Link>
+      <Link href="#programs" onClick={() => setOpen(false)} className="py-2 border-b">Our Programs</Link>
+      <Link href="#fees" onClick={() => setOpen(false)} className="py-2 border-b">Fees</Link>
+      <Link href="#contact" onClick={() => setOpen(false)} className="py-2 border-b">Contact</Link>
+      <Link href="/compliance" onClick={() => setOpen(false)} className="py-2 border-b">CSI Compliance</Link>
+      <Link href="/enroll" onClick={() => setOpen(false)} className="bg-[#2A7FFF] text-white px-5 py-3 rounded-lg font-bold text-center mt-2">Enroll Now</Link>
+    </div>
+  )}
+</nav>
 
       {/* HERO */}
       <section className="bg-[#2A7FFF] relative overflow-hidden">
