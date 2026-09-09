@@ -5,7 +5,7 @@ export default function BackHome() {
     return (
         <nav className="sticky top-0 z-50 flex justify-between items-center px-4 sm:px-6 py-3 bg-white border-b-4 border-[#0F2C5C] w-full">
         <div className="flex items-center gap-2 font-bold text-[#0F2C5C] text-sm sm:text-base">
-          <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-[#0F2C5C] bg-white shrink-0">
+          <div className="relative w-8 h-8 rounded-full overflow-hidden  bg-white shrink-0">
             <img 
               src="/tsundzukani-icon.jpg" 
               alt="Tsundzukani Icon" 
