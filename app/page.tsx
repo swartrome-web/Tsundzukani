@@ -31,21 +31,21 @@ export default function Home() {
       <Link href="/enroll" className="bg-[#2A7FFF] text-white px-5 py-2.5 rounded-lg font-bold shadow-md hover:bg-[#1A4AB9]">Enroll Now</Link>
     </div>
 
-    <button onClick={() => setOpen(!open)} className="md:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-slate-100 text-2xl">
-      {open? "✕" : "☰"}
-    </button>
+   <button onClick={() => setOpen(!open)} className="md:hidden w-10 h-10 flex items-center justify-center rounded-lg bg-slate-100 text-slate-900 text-2xl font-bold">
+  {open? "✕" : "☰"}
+  </button>
   </div>
 
-  {open && (
-    <div className="md:hidden bg-white border-t shadow-lg flex flex-col px-4 py-4 gap-4 text-sm font-semibold">
-      <Link href="#about" onClick={() => setOpen(false)} className="py-2 border-b">About Us</Link>
-      <Link href="#programs" onClick={() => setOpen(false)} className="py-2 border-b">Our Programs</Link>
-      <Link href="#fees" onClick={() => setOpen(false)} className="py-2 border-b">Fees</Link>
-      <Link href="#contact" onClick={() => setOpen(false)} className="py-2 border-b">Contact</Link>
-      <Link href="/compliance" onClick={() => setOpen(false)} className="py-2 border-b">CSI Compliance</Link>
-      <Link href="/enroll" onClick={() => setOpen(false)} className="bg-[#2A7FFF] text-white px-5 py-3 rounded-lg font-bold text-center mt-2">Enroll Now</Link>
-    </div>
-  )}
+ {open && (
+  <div className="md:hidden bg-white border-t shadow-xl flex flex-col px-4 py-4 gap-1 text-[15px] font-bold text-slate-900 absolute w-full left-0 top-full z-[100]">
+    <Link href="#about" onClick={() => setOpen(false)} className="py-3 px-2 border-b border-slate-100 hover:bg-slate-50 rounded">About Us</Link>
+    <Link href="#programs" onClick={() => setOpen(false)} className="py-3 px-2 border-b border-slate-100 hover:bg-slate-50 rounded">Our Programs</Link>
+    <Link href="#fees" onClick={() => setOpen(false)} className="py-3 px-2 border-b border-slate-100 hover:bg-slate-50 rounded">Fees</Link>
+    <Link href="#contact" onClick={() => setOpen(false)} className="py-3 px-2 border-b border-slate-100 hover:bg-slate-50 rounded">Contact</Link>
+    <Link href="/compliance" onClick={() => setOpen(false)} className="py-3 px-2 border-b border-slate-100 hover:bg-slate-50 rounded">CSI Compliance</Link>
+    <Link href="/enroll" onClick={() => setOpen(false)} className="bg-[#2A7FFF] text-white px-5 py-3 rounded-lg font-bold text-center mt-3">Enroll Now</Link>
+  </div>
+)}
 </nav>
 
       {/* HERO */}
