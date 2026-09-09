@@ -88,7 +88,7 @@ export default function CSIProposal() {
         <div className="bg-green-50 border-2 border-green-600 p-4 rounded-xl mt-6">
             <p className="font-bold text-green-900 text-sm">✅ VERIFIED & COMPLIANT - One Link:</p>
             <a href="/compliance" className="text-blue-700 underline font-bold text-sm break-words">
-                www.tsundzukanicentre.co.za/compliance → CIPC 2026/447870/08, Tax 9167660290, BR-02, Bank (Tue)
+                www.tsundzukanicentre.co.za/compliance → CIPC 2026/447870/08, Tax 9167660290, BR-02, Bank Not later than Oct 2026
             </a>
             <p className="text-xs mt-1 text-slate-900 font-medium">Low risk, fundable - Strategy + Value + Risk + Easy Approval</p>
         </div>
