@@ -169,27 +169,7 @@ export default function Home() {
       </section>
 
       {/* BLOG SECTION - For CSI Funding */}
-      <section className="max-w-6xl mx-auto px-6 py-12 bg-[#F8FAFC]">
-        <h2 className="text-3xl font-bold text-[#0F2C5C]">Latest Updates - Transparency for Donors</h2>
-        <p className="text-sm opacity-70 mt-2">Every story shows funders where money goes</p>
-        <div className="grid md:grid-cols-3 gap-6 mt-6">
-          {[
-            {title:"New Reading Corner Opened!",date:"Jul 2026",desc:"We built cozy reading nook with new books thanks to donors",img:"/blog1.jpg"},
-            {title:"Veggie Garden Growing Strong",date:"Aug 2026",desc:"Kids learning to grow their own vegetables - farm to plate",img:"/blog2.jpg"},
-            {title:"Teacher Training Workshop",date:"Sep 2026",desc:"Building better early childhood skills for our staff",img:"/blog3.jpg"},
-          ].map(b=>(
-            <div key={b.title} className="bg-white rounded-xl overflow-hidden border">
-              <img src={b.img} className="h-40 w-full object-cover" />
-              <div className="p-4">
-                <span className="text-xs bg-[#C7D9EF] px-2 py-1 rounded-full">{b.date}</span>
-                <h3 className="font-bold mt-2">{b.title}</h3>
-                <p className="text-sm mt-1 opacity-70">{b.desc}</p>
-                <a className="text-[#0F4DA8] text-sm font-bold mt-2 block">Read More →</a>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      
       <WhatsAppButton/>
       <Footer></Footer>
     </main>
