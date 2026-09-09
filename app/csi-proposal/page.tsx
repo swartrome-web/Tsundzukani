@@ -78,7 +78,7 @@ export default function CSIProposal() {
         <div className="bg-[#0F2C5C] text-white p-6 sm:p-8 rounded-2xl text-center">
           <h1 className="text-2xl sm:text-3xl font-bold text-white">Corporate Partnership Proposal</h1>
           <p className="mt-2 text-[#FFD93D] font-bold text-sm sm:text-base">R50,000 Tier 2 - Strategic Fit + Value + Zero Risk</p>
-          <p className="mt-2 text-[10px] sm:text-xs opacity-80 font-mono text-white break-words">NPC 2026/447870/08 | Tax 9167660290 | NO785 Radium | 60 Children | 3 Directors 2-to-sign</p>
+          <p className="mt-2 text-[10px] sm:text-xs opacity-80 font-mono text-white break-words">NPC 2026/447870/08 | Tax 9167660290 | NO785 Radium | 60+ Children | 3 Directors 2-to-sign</p>
           <button onClick={downloadPDF} disabled={downloading} className="mt-6 bg-[#FFD93D] text-[#0F2C5C] px-6 sm:px-8 py-3 rounded-full font-bold text-sm hover:bg-yellow-300 shadow">
             {downloading? 'Generating Honest PDF...' : '📄 Download R50,000 Proposal PDF'}
           </button>
@@ -103,7 +103,7 @@ export default function CSIProposal() {
           </div>
 
           <div className="bg-white">
-            <h3 className="font-bold text-slate-900">What You Get for R50k (Value not Charity):</h3>
+            <h3 className="font-bold text-slate-900">What You Get for R50k (Value):</h3>
             <ul className="list-disc pl-5 text-xs mt-2 space-y-1 text-slate-900 font-medium">
               <li>Logo wall NO785 + uniforms + thank you board</li>
               <li>12 content packs for ESG / LinkedIn / PR (POPIA safe)</li>
